@@ -3,7 +3,8 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
   
-
+  def new
+end
   
   def create
   Post.create(title: params[:post][:title], description: params[:post][:description])
